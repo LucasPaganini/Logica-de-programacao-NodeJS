@@ -5,12 +5,16 @@ export const autoDistribute = (
 ): Array<number> => {
   // Delete the next line, implementation goes there
 
-  const n = total;
-  const divided = parts;
-  const precision = decimalPrecision;
+  //const n = total;
+  //const divided = parts;
+  //const precision = decimalPrecision;
 
-  const calc = (n / divided);
+  const calc = parseFloat((total / parts).toFixed(decimalPrecision));
 
-  console.log(calc);
-  return [calc];
+  //calc.toFixed(precision);
+
+  const numberDivided = new Array(parts).fill(calc);
+
+  console.log(numberDivided);
+  return numberDivided;
 };
