@@ -4,5 +4,13 @@ export const autoDistribute = (
   decimalPrecision: number
 ): Array<number> => {
   // Delete the next line, implementation goes there
-  return [];
+
+  const n = total;
+  const divided = parts;
+  const precision = decimalPrecision;
+
+  const calc = (n / divided);
+
+  console.log(calc);
+  return [calc];
 };

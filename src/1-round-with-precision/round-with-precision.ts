@@ -7,6 +7,6 @@ export const roundWithPrecision = (
   const decimal = value;
   const rounded = parseFloat(decimal.toFixed(precision))
 
-  console.log(rounded);
+  //console.log(rounded);
   return rounded;
 };
